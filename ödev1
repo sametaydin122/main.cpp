@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	printf("atm'ye hos geldiniz");
+	int kullanici=1234,sifre=122530,a,b,c,hesap_no;
+	float anapara=3000,d,e,yeni_para1,yeni_para2,yeni_para3,gonderilen__para;
+	
+
+	printf("kullanici adi giriniz:");
+	scanf("%d",&a);
+	if(kullanici =a)
+	{printf("kullanici adi gecerli degil\n");
+	getch();
+	return;
+}
+	else
+	{printf("kullanici adi gecerli\n");
+getch();
+
+	}
+	printf("sifrenizi giriniz:");
+	scanf("%d",&b);
+		if(sifre=b)
+		{printf("sifre gecerli degil\n");
+		getch();
+	return;
+		}
+		else
+		{printf("sifre gecerli\n");
+getch();
+		}
+	printf("M_E_N_U\n");
+	printf("1-bankadaki para\n");
+        printf("2-para yatirma\n");
+        printf("3-para cekme\n");
+        printf("4-para gonderme\n");
+        printf("5-cikis\n");
+        printf("Tercih gir:");
+		scanf("%d",&c);
+		switch(a)
+
+		{
+case 1:
+
+    printf("bankadaki para: %f tl",anapara);
+	break;
+
+case 2:
+
+	printf("Yatiracaginiz miktari giriniz : "); 
+                scanf("%f",&d); 
+				yeni_para1=anapara+d;
+	printf("yeni para:%f tL",yeni_para1);
+				break;
+
+case 3:
+			printf("cekeceginiz tutarıgiriniz:");
+			scanf("%f",&e);
+			yeni_para2=anapara-e;
+			printf("yeni para:%f tL",yeni_para2);
+			break;
+case 4:
+	printf("para aktaracagın hesap nosunu gir:");
+	scanf("%d",&hesap_no);
+	printf("göndericegin tutarı gir");
+    scanf("%f",&gonderilen_para);
+    yeni_para3=anapara-gonderilen_para;
+    printf("yeni para:%f tL",yeni_para3);
+break;
+case 5:
+	printf("isleminiz sona ermistir iyi gunler");
